@@ -15,6 +15,15 @@ const textContent = document.querySelectorAll(".textContent");
 //
 //
 
+// ------ Numbers Counting ------
+$(".bigNumbers").counterUp({ delay: 10, time: 6000 });
+
+//
+//
+//
+//
+//
+
 // ------ Navbar elements select ------
 
 const offset = (elemPosition) => {
@@ -127,7 +136,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     speed: 2000,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     arrows: false,
     dots: true,
     adaptiveHeight: true,
@@ -145,7 +154,8 @@ $(document).ready(function () {
         breakpoint: 992,
         settings: {
           centerMode: true,
-          slidesToShow: 1.65,
+          slidesToShow: 1.67,
+          centerMargin: 5,
         },
       },
       {
