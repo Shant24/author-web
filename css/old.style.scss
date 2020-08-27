@@ -1,0 +1,153 @@
+.reviewsSlider {
+  margin: 68px -15px 0;
+
+  @media (max-width: 1199px) {
+    margin: 68px -13px 0;
+  }
+
+  @media (max-width: 991px) {
+    margin: 68px -15px 0;
+  }
+
+  // @media (max-width: 599px) {
+  //   width: 100%;
+  //   margin: 0;
+  // }
+
+  // @media (max-width: 480px) {
+  //   width: 300px;
+  //   margin: 0 auto;
+  // }
+
+  .sliderItem {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    // margin: 10px;
+
+    @media (max-width: 599px) {
+      width: 100%;
+    }
+
+    &.slick-slide {
+      outline: none;
+    }
+
+    .sliderItemBox {
+      width: 92%;
+      max-width: 400px;
+      // height: 264px;
+      margin: 20px 0;
+      padding: 24px 20px;
+      position: relative;
+      background-color: #fff;
+      border-radius: 5px;
+      font-size: 16px;
+      box-shadow: 0px 30px 33px -41px rgba(0, 0, 0, 0.24);
+
+      @media (max-width: 1199px) {
+        width: 91%;
+      }
+
+      @media (max-width: 991px) {
+        width: 92%;
+      }
+
+      @media (max-width: 767px) {
+        width: 97%;
+      }
+
+      @media (max-width: 599px) {
+        width: 500px;
+      }
+
+      // @media (max-width: 600px) {
+      //   width: 98%;
+      // }
+
+      .headerCircle {
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #17b978;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+      }
+
+      p {
+        margin-bottom: 1.5rem;
+        margin-right: -1px;
+        cursor: context-menu;
+      }
+
+      .person {
+        display: flex;
+        align-items: center;
+
+        .personImg {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            height: 100%;
+          }
+        }
+
+        .personInformation {
+          padding-left: 1rem;
+
+          .nameSurname {
+            color: #000000;
+            font-size: 20px;
+            font-weight: 500;
+            white-space: nowrap;
+          }
+
+          .profession {
+            color: #4d4d4d;
+          }
+        }
+      }
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+    margin-left: -10px;
+
+    li {
+      list-style: none;
+      width: 15px;
+      height: 15px;
+      margin: 0 5px 0 0;
+
+      &.slick-active button {
+        background: #17b978;
+      }
+
+      button {
+        width: 10px;
+        height: 10px;
+        margin: 0 10px;
+        border-radius: 50%;
+        border: none;
+        font-size: 0;
+        background: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}

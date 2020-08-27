@@ -123,48 +123,112 @@ const headerFixation = () => {
 
 window.addEventListener("scroll", headerFixation);
 
+// //
+// //
+// //
+// //
+// //
+
+// // Slick-Slider
+// $(document).ready(function () {
+//   $(".reviewsSlider").slick({
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     speed: 2000,
+//     autoplay: false,
+//     autoplaySpeed: 3000,
+//     arrows: false,
+//     dots: true,
+//     adaptiveHeight: true,
+//     // variableWidth: true,
+//     easing: "linear",
+//     pauseOnFocus: false,
+//     pauseOnHover: false,
+//     pauseOnDotsHover: false,
+//     touchThreshold: 10,
+//     touchMove: true,
+//     waitForAnimate: true,
+//     centerMode: false,
+//     centerMargin: 10,
+//     responsive: [
+//       {
+//         breakpoint: 992,
+//         settings: {
+//           centerMode: true,
+//           slidesToShow: 1.67,
+//         },
+//       },
+//       {
+//         breakpoint: 600,
+//         settings: {
+//           slidesToShow: 1,
+//           centerMode: false,
+//           // variableWidth: true,
+//         },
+//       },
+//     ],
+//   });
+// });
+
 //
 //
 //
 //
 //
 
-// Slick-Slider
+// owl carousel
 $(document).ready(function () {
-  $(".reviewsSlider").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    speed: 2000,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: false,
+  $(".owl-carousel").owlCarousel({
+    items: 3,
+    slideBy: 1,
+    margin: 30,
+    loop: true,
+    center: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    freeDrag: false,
+    stagePadding: 0, // ajic dzaxic paddingnera talis
+    merge: false,
+    mergeFit: true,
+    autoWidth: false,
+    startPosition: 0,
+    URLhashListener: false,
+    nav: false,
+    rewind: true,
+    navText: ["prev", "next"],
+    navElement: "div",
+    slideTransition: ``, // `3s`
     dots: true,
-    adaptiveHeight: true,
-    easing: "linear",
-    pauseOnFocus: false,
-    pauseOnHover: false,
-    pauseOnDotsHover: false,
-    touchThreshold: 10,
-    touchMove: true,
-    waitForAnimate: false,
-    centerMode: false,
-    centerMargin: 10,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          centerMode: true,
-          slidesToShow: 1.67,
-          centerMargin: 5,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          centerMode: false,
-        },
-      },
-    ],
+    dotsEach: false,
+    dotsData: false,
+    lazyLoad: false,
+    lazyLoadEager: 0, // "2"
+    autoplay: false,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    // smartSpeed: 250,
+    // fluidSpeed: ,
+    autoplaySpeed: false,
+    navSpeed: false,
+    // dotsSpeed: ,
+    dragEndSpeed: false,
+    callbacks: true,
+    responsive: {},
+    responsiveRefreshRate: 200,
+    responsiveBaseElement: window,
+    video: false,
+    videoHeight: false,
+    videoWidth: false,
+    animateOut: false,
+    animateIn: false,
+    fallbackEasing: "swing",
+    info: false,
+    nestedItemSelector: false,
+    itemElement: "div",
+    stageElement: "div",
+    navContainer: false,
+    dotsContainer: false,
+    checkVisible: true,
   });
 });
