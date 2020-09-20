@@ -21,7 +21,7 @@ html {
 body {
   width: 100%;
   min-height: 100vh;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.8;
   color: var(--body-color);
 }
@@ -74,7 +74,7 @@ h5,
   line-height: 1.5;
   color: var(--h-color);
   font-weight: 400;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 header {
@@ -84,7 +84,7 @@ header {
   left: 0;
   padding: 0.5rem 1rem;
   z-index: 10;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -150,7 +150,7 @@ header .headerContent .logo {
   font-size: 26px;
   font-weight: 900;
   line-height: 60px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-decoration: none;
   cursor: pointer;
 }
@@ -237,12 +237,12 @@ header nav a span {
   height: 68px;
   font-size: 16px;
   font-weight: 600;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   position: relative;
 }
 
 header nav a span::before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -542,7 +542,7 @@ main section #reviews.forSection {
   line-height: 1.3;
   color: #263b5e;
   margin-bottom: 7px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -648,7 +648,7 @@ main section #reviews.forSection {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #18b979;
   border-radius: 50px;
   -webkit-box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.09);
@@ -839,8 +839,8 @@ main section #reviews.forSection {
     padding: 0 70px;
   }
   .logosContainer .logosBox .wrapperLogo .logoItemBox a img {
-    max-width: 50%;
-    height: auto;
+    width: 50%;
+    height: 100%;
   }
 }
 
@@ -925,7 +925,7 @@ main section #reviews.forSection {
   padding-left: 3rem;
   color: #263b5e;
   line-height: 1.5;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -953,7 +953,7 @@ main section #reviews.forSection {
   font-size: 20px;
   font-weight: 700;
   line-height: 1.5;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .about .aboutContainer .bookDescription p {
@@ -961,7 +961,7 @@ main section #reviews.forSection {
   color: #6a7695;
   font-weight: 400;
   line-height: 1.8;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .about .aboutContainer .bookDescription p:last-child {
@@ -1078,7 +1078,7 @@ main section #reviews.forSection {
   color: #263b5e;
   font-size: 50px;
   font-weight: 700;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 
@@ -1155,7 +1155,7 @@ main section #reviews.forSection {
 }
 
 .chapter .container.chapterContainer .pagesContent .navBox nav a.current::before {
-  content: "";
+  content: '';
   position: absolute;
   left: -25px;
   top: calc(50% - 1px);
@@ -1202,7 +1202,7 @@ main section #reviews.forSection {
   font-size: 30px;
   line-height: 1.5;
   font-weight: 700;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .chapter .container.chapterContainer .pagesContent .pagesText .textContent p {
@@ -1349,7 +1349,7 @@ main section #reviews.forSection {
 }
 
 .services .container.servicesContainer .serviceItems .sItem h3::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   bottom: -14px;
